@@ -1,0 +1,416 @@
+{
+	"info": {
+		"_postman_id": "057ced19-b5a7-42d4-86a4-8317935dab9d",
+		"name": "ClearFactor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Driver",
+			"item": [
+				{
+					"name": "GET Driver",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/Driver",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Driver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET DriverById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/Driver/6e731dc7-5aa7-4c63-52c9-08da3e460edf",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Driver",
+								"6e731dc7-5aa7-4c63-52c9-08da3e460edf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Driver",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\":\"Meyrick\",\r\n    \"Surname\":\"Sandham\",\r\n    \"Email\":\"meyricksandham@gmail.com\",\r\n    \"CellContact\":\"0825605842\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/Driver",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Driver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Driver",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"id\": \"6e731dc7-5aa7-4c63-52c9-08da3e460edf\",\r\n        \"name\": \"MeyrickChanged\",\r\n        \"surname\": \"Sandham\",\r\n        \"email\": \"meyricksandham@gmail.com\",\r\n        \"cellContact\": \"0825605842\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/Driver",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Driver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Driver",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/Driver/6e731dc7-5aa7-4c63-52c9-08da3e460edf",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Driver",
+								"6e731dc7-5aa7-4c63-52c9-08da3e460edf"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Car",
+			"item": [
+				{
+					"name": "GET Car",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/Car",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Car"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET CarById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/Car/65971c8e-6516-4f48-b50e-08da3e48e5a0",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Car",
+								"65971c8e-6516-4f48-b50e-08da3e48e5a0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Car",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Make\": \"Ford\",\r\n    \"Model\": \"Fiesta\",\r\n    \"Year\": 2013,\r\n    \"Color\":\"White\",\r\n    \"RegistrationId\":\"CK14LPGP\",\r\n    \"VinNumber\":\"12345678910\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/Car",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Car"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Car",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"id\": \"65971c8e-6516-4f48-b50e-08da3e48e5a0\",\r\n    \"make\": \"Ford\",\r\n    \"model\": \"Mustang\",\r\n    \"year\": 2013,\r\n    \"color\": \"White\",\r\n    \"registrationId\": \"CK14LPGP\",\r\n    \"vinNumber\": \"12345678910\",\r\n    \"driverId\": \"00000000-0000-0000-0000-000000000000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/Car",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Car"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Car",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/Car/2c8e1ede-d2e5-484b-b50f-08da3e48e5a0",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Car",
+								"2c8e1ede-d2e5-484b-b50f-08da3e48e5a0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST AssignDriverToCar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/Car/cdd9ebe3-6eff-41db-bfde-08da3e4b131a/7646b0c0-47e4-41d4-b401-08da3e4b10d7",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Car",
+								"cdd9ebe3-6eff-41db-bfde-08da3e4b131a",
+								"7646b0c0-47e4-41d4-b401-08da3e4b10d7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Trip",
+			"item": [
+				{
+					"name": "GET Trip",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/Trip",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Trip"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET TripById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/Trip",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Trip"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Trip",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"StartLocation\":\"0000.00000:0000.00000\",\r\n    \"Active\":true,\r\n    \"HeartBeatCount\":0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/Trip",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Trip"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Trip",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"id\": \"527666e2-8514-4ff5-6b6b-08da3e4b1674\",\r\n        \"startLocation\": \"0000.00000:0000.00000\",\r\n        \"endLocation\": null,\r\n        \"active\": true,\r\n        \"heartBeatCount\": 0,\r\n        \"carId\": \"00000000-0000-0000-0000-000000000000\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/Trip",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Trip"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Trip",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/Trip",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Trip"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST AssignCarToTrip",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/Trip/527666e2-8514-4ff5-6b6b-08da3e4b1674/cdd9ebe3-6eff-41db-bfde-08da3e4b131a",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Trip",
+								"527666e2-8514-4ff5-6b6b-08da3e4b1674",
+								"cdd9ebe3-6eff-41db-bfde-08da3e4b131a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MicroService_C API",
+			"item": [
+				{
+					"name": "GET PenaltyByDriverId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:7000/PenaltyByDriverId/7646b0c0-47e4-41d4-b401-08da3e4b10d7",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"PenaltyByDriverId",
+								"7646b0c0-47e4-41d4-b401-08da3e4b10d7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
